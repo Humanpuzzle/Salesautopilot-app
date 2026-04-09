@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  app:
+    image: php:8.2-apache
+    container_name: sapi_app
+    ports:
+      - "8000:80"
+    volumes:
+      - ./:/var/www/html
+    working_dir: /var/www/html
+    command: bash -c "apt-get update && apt-get install -y git unzip curl && docker-php-ext-install pdo pdo_mysql && a2enmod rewrite && apache2-foreground"

@@ -1,0 +1,1 @@
+A Docker környezetben ideiglenes fájlkezelési problémát tapasztaltam, amit jogosultságkezeléssel és PHP konfigurációval oldottam meg.
