@@ -35,4 +35,11 @@ return [
         ],
     ],
 
+    'sapi' => [
+        'base_url' => env('SAPI_API_URL'),
+        'username' => env('SAPI_API_USERNAME'),
+        'password' => env('SAPI_API_KEY'),
+        'mock' => env('SAPI_MOCK', false),
+    ],
+
 ];
